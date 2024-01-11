@@ -364,6 +364,13 @@ section.contact .contact-me .right .form-group input{
   border:1px solid #ccc;
   border-radius:10px;
 }
+
+/* :hover mouseover 파란색 테두리와 그림자 효과 추가 */ 
+section.contact .contact-me .card:hover{
+  border:1px solid #719ECE;
+  box-shadow:0 0 10px #719ECE;
+}
+
 /* :focus 가상 클래스 선택자로 입력 요소에 커서가 활성화되면 파란색 테두리와 그림자 효과 추가 */ 
 section.contact .contact-me .right .form-group input:focus{
   border:1px solid #719ECE;
