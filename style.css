@@ -259,13 +259,29 @@ section .do-me .do-inner:hover i{
 /* end Skills.css */
 
 /* background.css */
-.bg{
-  background:url('/images/background.jpg') center center;
+/* .bg{
+  background:url('./images/background.jpg') center center;
   background-size:cover;
   background-attachment:fixed;
   height:650px;
-}
+} */
 /* End background.css */
+
+.bg{
+  width:100%;
+  height:50vh;
+  color:white;
+  background: url('images/background.JPG') center center;
+  background-attachment:fixed;
+  background-size:cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+
+
 
 /* portfolio.css */
 /* clear 속성으로 float 속성값 해제*/
