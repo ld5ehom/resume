@@ -80,6 +80,10 @@ function redirectToLinkedin() {
   window.open("https://linkedin.com/in/ld5ehom", "_blank");
 }
 
+function redirectToTwitter() {
+  window.open("https://twitter-4ae9d.web.app/login", "_blank");
+}
+
 function redirectToShop() {
   window.open("https://ld5ehom.github.io/shop/", "_blank");
 }
