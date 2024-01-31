@@ -81,7 +81,7 @@ function redirectToLinkedin() {
 }
 
 function redirectToTwitter() {
-  window.open("https://twitter-4ae9d.web.app/login", "_blank");
+  window.open("twitter-4ae9d.web.app", "_blank");
 }
 
 function redirectToShop() {
