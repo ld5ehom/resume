@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>TaeWook Park PortFolio</title>
+  <title>TaeWook Park Portfolio</title>
 
   <!--cdnjs.com font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,6 +19,7 @@
       <h1>
         <!--data-animation-scroll="true" check location Y , locataion target -->
         <button data-animation-scroll="true" data-target="#main">
+          <i class="fa-solid fa-house"></i>
           HOME
         </button>
       </h1>
@@ -28,21 +29,37 @@
         <ul>
           <li>
             <button data-animation-scroll="true" data-target="#about">
+              <i class="fa-solid fa-person"></i>
               About
             </button>
           </li>
           <li>
             <button data-animation-scroll="true" data-target="#features">
+              <i class="fa-regular fa-keyboard"></i>
               Features
             </button>
           </li>
+          <!-- <li>
+            <button data-animation-scroll="true" data-target="#android">
+              <i class="fa-brands fa-android"></i>
+              Android
+            </button>
+          </li> -->
           <li>
             <button data-animation-scroll="true" data-target="#portfolio">
-              Portfolio
+              <i class="fa-solid fa-desktop"></i>
+              Web
+            </button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#game">
+              <i class="fa-solid fa-gamepad"></i>
+              Game
             </button>
           </li>
           <li>
             <button data-animation-scroll="true" data-target="#contact">
+              <i class="fa-regular fa-envelope"></i>
               Contact
             </button>
           </li>
@@ -157,13 +174,13 @@
   <section id="portfolio" class="portfolio">
     <div class="container">
       <div class="title">
-        <h4>PROJECTS</h4>
+        <h4>Front End</h4>
         <h2>Portfolio</h2>
       </div>
       <div class="portfolio-me">
         <div class="portfolio-inner" onclick="redirectToTwitter()">
           <img src="images/twitter.png" alt="">
-          <strong>React</strong>
+          <strong>React, Firebase</strong>
           <h3>Twitter(X) Clone</h3>
         </div>
         <div class="portfolio-inner" onclick="redirectToShop()">
@@ -171,26 +188,37 @@
           <strong>React</strong>
           <h3>Shopping Mall</h3>
         </div>
-        <div class="portfolio-inner" onclick="redirectToCard()">
-          <img src="images/cardmatch.png" alt="">
-          <strong>C#</strong>
-          <h3>Card Match Game</h3>
-        </div>
-        <div class="portfolio-inner" onclick="redirectToAa()">
-          <img src="images/aa.png" alt="">
-          <strong>C#</strong>
-          <h3> AA Clone </h3>
-        </div>
         <!-- <div class="portfolio-inner">
           <img src="images/mock4.png" alt="">
           <strong>APP</strong>
           <h3>FaceBook Clone</h3>
         </div> -->
-
       </div>
     </div>
   </section>
   <!-- //end Projects PortFolio -->
+
+  <!-- games PortFolio -->
+  <section id="game" class="game">
+    <div class="container">
+      <div class="title">
+        <h4>Games</h4>
+        <h2>Portfolio</h2>
+      </div>
+        <div class="game-inner" onclick="redirectToCard()">
+          <img src="images/cardmatch.png" alt="">
+          <strong>Unity, C#</strong>
+          <h3>Card Match Game</h3>
+        </div>
+        <div class="game-inner" onclick="redirectToAa()">
+          <img src="images/aa.png" alt="">
+          <strong>Unity, C#</strong>
+          <h3> AA Clone </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //end games PortFolio -->
 
   <!-- Contact With Me -->
   <section id="contact" class="contact">
