@@ -19,7 +19,6 @@
       <h1>
         <!--data-animation-scroll="true" check location Y , locataion target -->
         <button data-animation-scroll="true" data-target="#main">
-          <i class="fa-solid fa-house"></i>
           HOME
         </button>
       </h1>
@@ -30,33 +29,35 @@
           <li>
             <button data-animation-scroll="true" data-target="#about">
               <i class="fa-solid fa-person"></i>
-              About
+                About &nbsp;&nbsp;
             </button>
           </li>
-          <li>
+          <!-- <li>
             <button data-animation-scroll="true" data-target="#features">
-              <i class="fa-regular fa-keyboard"></i>
-              Features
+              <i class="fa-regular fa-keyboard"></i> 
+                Features
+            </button>
+          </li> -->
+          
+          <li>
+            <button data-animation-scroll="true" data-target="#portfolio">
+              <i class="fa-solid fa-desktop"></i>
+              <i class="fa-brands fa-android"></i>
+                Portfolio &nbsp;&nbsp;
             </button>
           </li>
           <!-- <li>
             <button data-animation-scroll="true" data-target="#android">
               <i class="fa-brands fa-android"></i>
-              Android
+                Android
             </button>
           </li> -->
-          <li>
-            <button data-animation-scroll="true" data-target="#portfolio">
-              <i class="fa-solid fa-desktop"></i>
-              Web
-            </button>
-          </li>
-          <li>
+          <!-- <li>
             <button data-animation-scroll="true" data-target="#game">
               <i class="fa-solid fa-gamepad"></i>
               Game
             </button>
-          </li>
+          </li> -->
           <li>
             <button data-animation-scroll="true" data-target="#contact">
               <i class="fa-regular fa-envelope"></i>
@@ -101,20 +102,20 @@
         <div class="right">
           <h3>Hello, <strong>I`m TaeWook Park</strong></h3>
           <br>
-          <hr>
-          <div class="social">
-            <a href="#">
-              <i class="fa-solid fa-graduation-cap"></i>
-            </a>
-            <!-- <a href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a> -->
-          </div>
-          <p>Linguistics & Computer Science  B.A. (STEM)</p>
-          <p>University of California, Los Angeles (2023 ~ current)</p>
+            <hr>
+            <div class="social">
+              <a href="#">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </a>
+              <!-- <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a> -->
+            </div>
+            <p>University of California, Los Angeles (2023 ~ )</p>
+            <p>Linguistics & Computer Science  B.A (STEM)</p>
           <br>
-          <hr>
-          <p>Irvine Valley College (2020 ~ 2023)</p>
+            <hr>
+            <p>Irvine Valley College (2020 ~ 2023)</p>
         </div>
       </div>
     </div>
@@ -148,27 +149,22 @@
           </div>
           <div class="content">
             <h3>Back-End</h3>
-            <p>Java <br> Python <br> C# </p>
+            <p>Java <br> Kotlin <br> Python </p>
           </div>
         </div>
         <div class="do-inner">
           <div class="icon">
-            <i class="fa-solid fa-language"></i>
+            <i class="fa-brands fa-android"></i>
           </div>
           <div class="content">
-            <h3>Language</h3>
-            <p> Korean (Native) </p>
+            <h3>Mobile</h3>
+            <p> Android </p>
           </div>
         </div>
       </div>
     </div>  
   </section>
   <!-- //end Features Skills -->
-
-  <!-- Background -->
-  <div class="bg"></div>
-  <!-- //end Background-->
-
 
   <!-- Projects PortFolio -->
   <section id="portfolio" class="portfolio">
@@ -177,7 +173,13 @@
         <h4>Portfolio</h4>
         <h2>Front-End</h2>
       </div>
+
       <div class="portfolio-me">
+        <div class="portfolio-inner" onclick="redirectToStarbucksweb()">
+          <img src="images/starbucksweb.png" alt="">
+          <strong>HTML/CSS, Javascript</strong>
+          <h3>Starbucks Korea</h3>
+        </div>
         <div class="portfolio-inner" onclick="redirectToTwitter()">
           <img src="images/twitter.png" alt="">
           <strong>React, Firebase</strong>
@@ -199,18 +201,20 @@
   <!-- //end Projects PortFolio -->
 
   <!-- games PortFolio -->
-  <section id="game" class="game">
+  <section id="portfolio" class="portfolio">
     <div class="container">
       <div class="title">
         <h4>Portfolio</h4>
         <h2>Games</h2>
       </div>
-        <div class="game-inner" onclick="redirectToCard()">
+
+      <div class="portfolio-me">
+        <div class="portfolio-inner" onclick="redirectToCard()">
           <img src="images/cardmatch.png" alt="">
           <strong>Unity, C#</strong>
           <h3>Card Match Game</h3>
         </div>
-        <div class="game-inner" onclick="redirectToAa()">
+        <div class="portfolio-inner" onclick="redirectToAa()">
           <img src="images/aa.png" alt="">
           <strong>Unity, C#</strong>
           <h3> AA Clone </h3>
@@ -260,7 +264,7 @@
               <p>ld5ehom@gmail.com</p>
             </div>
           </div>
-          <!-- <div class="card">
+          <div class="card">
             <div class="icon">
               <i class="fa-solid fa-location-crosshairs"></i>
             </div>
@@ -268,10 +272,10 @@
               <h3>Address</h3>
               <p>3170 W Olympic Blvd, <br>Los Angeles, CA</p>
             </div>
-          </div> -->
+          </div>
         </div>
         <!-- Email section -->
-         <div class="right">
+        <div class="right">
           <form action="#">
             <div class="form-group">
               <label for="name">name</label>

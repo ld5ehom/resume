@@ -3,7 +3,7 @@
 
   // main tag h2 <span>
   const spanEl = document.querySelector("main h2 span");
-  const textArray = ['TaeWook Park', 'Software Engineer', 'Front-End Developer', 'Back-End Developer'];
+  const textArray = ['TaeWook Park', 'UCLA Student', 'Front-End Developer', 'Android Developer'];
   let index = 0;
   let currentText = textArray[index].split(""); //text array 문자열 추출
 
@@ -78,6 +78,10 @@ function redirectToGitHub() {
 
 function redirectToLinkedin() {
   window.open("https://linkedin.com/in/ld5ehom", "_blank");
+}
+
+function redirectToStarbucksweb() {
+  window.open("https://ld5ehom.github.io/starbucks/", "_blank");
 }
 
 function redirectToTwitter() {
