@@ -81,7 +81,7 @@ function redirectToLinkedin() {
 }
 
 function redirectToMovie() {
-  window.open("https://movie-ajb5pckb7-taewooks-projects.vercel.app/#/", "_blank");
+  window.open("https://movie-sable-nine.vercel.app/#/", "_blank");
 }
 
 function redirectToTwitter() {
