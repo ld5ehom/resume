@@ -3,7 +3,7 @@
 
   // main tag h2 <span>
   const spanEl = document.querySelector("main h2 span");
-  const textArray = ['TaeWook Park', 'UCLA Student', 'Front-End Developer', 'Android Developer'];
+  const textArray = ['TaeWook Park', 'Android Developer', 'Software Developer'];
   let index = 0;
   let currentText = textArray[index].split(""); //text array 문자열 추출
 
@@ -80,8 +80,8 @@ function redirectToLinkedin() {
   window.open("https://linkedin.com/in/ld5ehom", "_blank");
 }
 
-function redirectToStarbucksweb() {
-  window.open("https://ld5ehom.github.io/starbucks/", "_blank");
+function redirectToMovie() {
+  window.open("https://movie-ajb5pckb7-taewooks-projects.vercel.app/#/", "_blank");
 }
 
 function redirectToTwitter() {
