@@ -100,7 +100,7 @@ section{
   background-color:#2774AE;
 }
 /* 배경 2 색깔  */
- section:nth-child(2n){
+section:nth-child(2n){
   background-color: #005587;
 } 
 section .title{
@@ -126,9 +126,7 @@ section .title p{
 
 .about {
   width:100%;
-  height:90vh;
-  /* background-image: url('../images/ucla2.jpeg'); */
-  /* color:white; */
+  height:85vh;
   background:linear-gradient(rgba(0,0,0,0.9) /*위*/, rgba(0,0,0,0.85)/*아래*/), url('../images/ucla2.jpeg') center center;
   background-size:cover;
   display:flex;
@@ -567,6 +565,125 @@ section .about-self .left .social a{
   right: 0;
   z-index: 0;
 }
+
+/*Project 3 - portfolio 3*/
+/*Project 3 아래 전체 박스 */
+.project_3 .project3-carousel{
+  height: 1300px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  position: flex;
+  background:linear-gradient(rgba(0,0,0,0.05) /*위*/, rgba(0,0,0,0.2)/*아래*/), center center;
+}
+.project_3 .project3-carousel .project3-title{
+  position: relative;
+  margin-bottom: 5px;
+}
+
+/*캐러셀 Description*/
+.project_3 .project3-carousel .project3-title h2{
+  padding-top: 20px;
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 40px;
+  font-weight: bold; /* Make h3 text bold */
+  justify-content: space-between;
+}
+.project_3 .project3-carousel .project3-title p{
+  margin-left: 70px;
+  font-size: 25px;
+  color: #003B5C;
+  font-weight: bold; /* Make h3 text bold */
+}
+.project_3 .project3-carousel .btn{
+  width: 120px;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+/*Project 3 아래 전체 박스 안에 슬라이드 박스 */
+.project_3 .project3-carousel .swiper-container{
+    /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
+    width: calc(1000px * 3 + 20px);
+    height: 800px; /*500*/
+    top: 1px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-left: calc((1000px * 3 + 20px) / -2); /*가운데 맞춤 */
+}
+.project_3 .project3-carousel .swiper-slide img{ 
+  width: 1000px;
+  height: 800px;
+}
+.project_3 .project3-carousel .swiper-slide{ /*슬라이드 이미지 반투명하게 */
+  position: relative;
+  opacity: .5;
+  transition: opacity 1s;
+}
+.project_3 .project3-carousel .swiper-slide-active { /* 가운데 슬라이드 이미지 */
+  opacity: 1;
+}
+
+.project_3 .project3-carousel .swiper-pagination {
+  margin-top: 5px;
+  left: 0;
+  right: 0;
+  z-index: 0; 
+}
+.project_3 .project3-carousel .swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  background-image: url("../images/slide_pager.png");
+  width: 13px;
+  height: 12px;
+  margin-right: 10px;
+  outline: none;
+}
+.project_3 .project3-carousel .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.project_3 .project3-carousel .swiper-pagination .swiper-pagination-bullet-active {
+  background-image: url("../images/slide_pager_on.png");
+}
+
+/*좌우이동키*/
+.project_3 .project3-carousel .swiper-prev,
+.project_3 .project3-carousel .swiper-next {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: 2px solid  #003B5C;
+  border-radius: 50%;
+  position: absolute;
+  /* top: 750px; */
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+.project_3 .project3-carousel .swiper-prev {
+  color:  #003B5C;
+  left: 50%;
+  margin-top: -450px;
+  margin-left: -570px;
+}
+.project_3 .project3-carousel .swiper-next {
+  color:  #003B5C;
+  right: 50%;
+  margin-top: -450px;
+  margin-right: -570px;
+}
+.project_3 .project3-carousel .swiper-prev:hover,
+.project_3 .project3-carousel .swiper-next:hover {
+  background-color: #8BB8E8;
+  color: #003B5C;
+}
+/*End Project 3 - portfolio 3*/
 /*End Project 3*/
 
 
@@ -728,7 +845,7 @@ section .about-self .left .social a{
 }
 .notice .personal-carousel .swiper-pagination .swiper-pagination-bullet {
   background-color: transparent;
-  background-image: url("../images/promotion_slide_pager.png");
+  background-image: url("../images/slide_pager1.png");
   width: 13px;
   height: 12px;
   margin-right: 6px;
@@ -738,7 +855,7 @@ section .about-self .left .social a{
   margin-right: 0;
 }
 .notice .personal-carousel .swiper-pagination .swiper-pagination-bullet-active {
-  background-image: url("../images/promotion_slide_pager_on.png");
+  background-image: url("../images/slide_pager_on.png");
 }
 /*좌우이동키*/
 .notice .personal-carousel .swiper-prev,
@@ -774,6 +891,7 @@ section .about-self .left .social a{
   background-color: #8BB8E8;
   color: #003B5C;
 }
+
 
 
 

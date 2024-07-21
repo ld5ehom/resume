@@ -353,9 +353,13 @@ footer .social a:hover {
     section .personal-me .personal-inner:nth-child(2n+1){
         margin-right:4%;
     }
+
+    section .project_3 .project3-carousel .project3-title{
+        margin-bottom: 50px;
+    }
 }
 
-/* media.css size < 992 */
+/* media.css size < 992 (창 변환됨)*/
 @media screen and (max-width: 992px){
     /*rem 기준이기 때문에 font size change*/
     html{
