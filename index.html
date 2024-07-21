@@ -43,9 +43,11 @@
   <!--GSAP & ScrollToPlugin-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  
   <!--Swiper-->
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
   <!--ScrollMagic-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
   <!--Lodash-->
@@ -372,10 +374,11 @@
     <div class="notice-line">
       <div class="bg-left"></div>
       <div class="bg-right"></div>
-      <div class="inner">
+      <div class="inner"> <!--가운데 정렬-->
 
         <div class="inner__left">
           <h2>PROJECTS</h2>
+          <!-- https://swiperjs.com/ vertical slide 시작 -->
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -408,14 +411,23 @@
     <div class="personal-carousel">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="/images/slide1.jpg" alt=" Movie Search Website" />
+          <div class="swiper-slide"> <!-- 슬라이드 요소 -->
+            <div style="position: relative;">
+              <!-- width 800px , height 500px -->
+              <img src="/images/movie.jpg" alt="Movie Search Website" >
+              <h2>Movie Search Website</h2>
+              <p>Javascript</p>
+            </div>
             <a href="javascript:void(0)" class="btn" onclick="redirectToMovie()">Details</a>
           </div>
+
           <div class="swiper-slide">
-            <img src="images/slide2.jpg"  alt="Unity Card Match Game" />
+            <img src="images/cardmatch.jpg"  alt="Unity Card Match Game" />
+            <h2>Card Match Game</h2>
+            <p>Unity, C#</p>
             <a href="javascript:void(0)" class="btn" onclick="redirectToCard()">Details</a>
           </div>
+
           <!-- <div class="swiper-slide">
             <img src="images/slide2.jpg"  alt="Piazza" />
             <a href="javascript:void(0)" class="btn" onclick="redirectToPiazza()">Details</a>
