@@ -144,14 +144,6 @@
       </nav>
     </div>
     <!--BADGES-->
-    <!-- <div class="badges">
-      <div class="badge" onclick="redirectToLinkedin()">
-        <img src="./images/linkedin.png" alt="Badge" />
-      </div>
-      <div class="badge" onclick="redirectToGitHub()">
-        <img src="./images/github2.png" alt="Badge" />
-      </div>
-    </div> -->
     <div class="badges">
       <div class="badge" onclick="redirectToLinkedin()">
         <a href="https://www.linkedin.com/in/ld5ehom" target="_blank">
@@ -242,7 +234,7 @@
 
       <div class="title fade-in">
         <img src="./images/swift.png" alt="왼쪽 위 메인 이미지" />
-        <a href="javascript:void(0)" class="btn btn--swift">Details</a>
+        <a href=" " class="btn btn--swift">Details</a>
       </div>
       <div class="fade-in">
         <img src="./images/iphone.jpg" alt="오른쪽 뒤" class="swift1 image" />
@@ -272,7 +264,7 @@
         <img src="./images/find_store_text1.png" alt=" " class="title back-to-position to-left delay-0" />
         <img src="./images/find_store_text2.png" alt=" " class="description back-to-position to-left delay-1" />
         <div class="more back-to-position to-left delay-2">
-          <a href="javascript:void(0)" class="btn">Details</a>
+          <a href=" " class="btn">Details</a>
         </div>
       </div>
 
@@ -284,7 +276,6 @@
   <!-- Project 2 Campus-->
   <section id="project_2" class="project_2 scroll-spy">
     <div class="inner">
-
       <img src="./images/campus_3.png" alt="campus_01" class="floating floating3" />
       <img src="./images/campus_1.png" alt="campus_0" class="product back-to-position to-right delay-1" />
 
@@ -299,14 +290,53 @@
           <a href="https://github.com/ld5ehom/campus.git" class="btn" target="_blank"> 
             <i class="fa-brands fa-github"></i> Github 
           </a> 
-          <a class="btn">
+          <div class="toggle-project_2 open"> <!--토글버튼-->
+            <a class="btn">
+              <div class="material-icons" id="project2-carousel-icon">download</div>
               Details
-            <div class="material-icons" id="portfolio-carousel-icon">download</div>
-          </a>
+            </a>
+          </div> 
         </div>
       </div>
     </div>
+    <!-- project 2 carousel campus -->
+    <div class="project2-carousel"> 
+      <div class="project2-title">
+        <div class="toggle-close_2" id="toggle-close_2"> <!--토글버튼-->
+          <h2>Description 
+            <a class="btn">
+              &nbsp;Close &nbsp;
+              <div class="material-icons" id="project2-close-icon">upload</div>
+            </a>  
+          </h2>
+        </div> 
+        <p>- Developed a system based on Microservices Architecture (MSA) that integrates and aggregates data from RESTful API, gRPC, and GraphQL, enabling students to view course information in real-time and register for courses.</p>
+        <p>- Implemented a Course Management system with RESTful API for course creation, management, session handling, and evaluations, along with course playback information, enrollment, and playback services using gRPC, and aggregated data from these components using GraphQL.</p>
+        <p>- Collected component metrics with Prometheus and visualized them using Grafana, while also collecting transaction data from each component using Zipkin, storing it in Elasticsearch, and visualizing it through Kibana.</p>
+      </div>
 
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/campus_1.png" alt="campus 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/campus_2.png" alt="campus 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/campus_3.png" alt="campus 3">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+      <div class="swiper-next">
+        <span class="material-icons">arrow_forward</span>
+      </div>
+    </div>
+    <!-- End project 2 carousel -->
 
   </section>
   <!-- // End Project 2 -->
@@ -326,15 +356,6 @@
         </div>
 
         <div class="more back-to-position to-right delay-2">
-          <!-- <div class="toggle-project_3"></div> -->
-          <!-- <a href="javascript:void(0)" class="btn">
-            <div class="material-icons" id="carousel-icon">download</div>
-            Details
-          </a> -->
-          <!-- personal 참고
-          <div class="toggle-carousel open">
-            <div class="material-icons" id="personal-carousel-icon">upload</div> 
-          -->
           <div class="toggle-project_3 open"> <!--토글버튼-->
             <a class="btn">
               <div class="material-icons" id="project3-carousel-icon">download</div>
@@ -352,14 +373,14 @@
     <!-- project 3 carousel -->
     <div class="project3-carousel"> <!--promotion-->
       <div class="project3-title">
-        <h2>Description 
-          <a class="btn">
-            &nbsp;Close &nbsp;
-            <div class="material-icons" id="project3-close-icon">upload</div>
-          </a>  
-        </h2>
-        <p>- Developed an online store utilizing Spring Boot and AWS services, designed with a microservices architecture (MSA) for scalable and efficient performance.</p>
-        <p>- Designed and implemented a RESTful backend server enabling persistent storage in an online database using AWS services, including RDS for relational data, DynamoDB for NoSQL data (such as purchase history), and S3 for storage.</p>
+        <div class="toggle-close_3" id="toggle-close_3"> <!--토글버튼-->
+          <h2>Description 
+            <a class="btn">
+              &nbsp;Close &nbsp;
+              <div class="material-icons" id="project3-close-icon">upload</div>
+            </a>  
+          </h2>
+        </div> 
         <p>- Developed an online store utilizing Spring Boot and AWS services, designed with a microservices architecture (MSA) for scalable and efficient performance.</p>
         <p>- Designed and implemented a RESTful backend server enabling persistent storage in an online database using AWS services, including RDS for relational data, DynamoDB for NoSQL data (such as purchase history), and S3 for storage.</p>
       </div>
@@ -394,9 +415,8 @@
       <div class="swiper-next">
         <span class="material-icons">arrow_forward</span>
       </div>
-
     </div>
-
+    <!-- End project 3 carousel -->
   </section>
   <!-- // End Project 3 -->
 
@@ -462,11 +482,6 @@
             <a class="btn" onclick="redirectToCard()">Details</a>
           </div>
 
-          <!-- <div class="swiper-slide">
-            <img src="./images/slide2.jpg"  alt="Piazza" />
-            <a href="javascript:void(0)" class="btn" onclick="redirectToPiazza()">Details</a>
-          </div> -->
-
         </div>
       </div>
 
@@ -504,12 +519,6 @@
           <strong>&nbsp;&nbsp;Java, Spring Boot</strong>
         </div>
 
-        <!-- <div class="portfolio-inner" onclick="redirectToCard()">
-          <img src="./images/cardmatch.jpg" alt="">
-          <h3>&nbsp;Card Match Game</h3>
-          <strong>&nbsp;&nbsp;Unity, C#</strong>
-        </div> -->
-
       </div>
     </div>
   </section>
@@ -525,11 +534,6 @@
       
       <div class="personal-me">
 
-        <!-- <div class="personal-inner" onclick="redirectToPiazza()">
-          <img src="./images/cardmatch.jpg" alt="">
-          <h3>&nbsp;Piazza</h3>
-          <strong>&nbsp;&nbsp;Java, Spring Boot,</strong>
-        </div> -->
 
         <div class="personal-inner" onclick="redirectToMovie()">
           <img src="./images/movie.jpg" alt="">

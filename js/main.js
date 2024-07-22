@@ -146,6 +146,49 @@ new Swiper('.notice-line .swiper-container', {
   autoplay: true, // 자동 재생 여부
   loop: true // 반복 재생 여부
 })
+// Emd Swiper (선택자 , 옵션)
+
+/* Project 1 carousel*/
+new Swiper('.project1-carousel .swiper-container',{
+  // direction: 'horizontal', // 수평 슬라이드
+  autoplay: { // 자동 재생 여부
+    delay: 5000 // 5초마다 슬라이드 바뀜
+  },
+  loop: true, // 반복 재생 여부
+  slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
+  spaceBetween: 10, // 슬라이드 사이 여백(px)
+  centeredSlides: true, // 1번 슬라이드가 가운데 보이기(가운데 시작)
+  pagination: { // 페이지 번호 사용 여부
+    el: '.project1-carousel .swiper-pagination', // 페이지 번호 요소 선택자
+    clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
+  },
+  navigation: { // 슬라이드 이전/다음 버튼 사용 여부
+    prevEl: '.project1-carousel .swiper-prev', // 이전 버튼 선택자
+    nextEl: '.project1-carousel .swiper-next' // 다음 버튼 선택자
+  }
+})
+/* End Project 1 carousel*/
+
+/* Project 2 carousel*/
+new Swiper('.project2-carousel .swiper-container',{
+  // direction: 'horizontal', // 수평 슬라이드
+  autoplay: { // 자동 재생 여부
+    delay: 5000 // 5초마다 슬라이드 바뀜
+  },
+  loop: true, // 반복 재생 여부
+  slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
+  spaceBetween: 10, // 슬라이드 사이 여백(px)
+  centeredSlides: true, // 1번 슬라이드가 가운데 보이기(가운데 시작)
+  pagination: { // 페이지 번호 사용 여부
+    el: '.project2-carousel .swiper-pagination', // 페이지 번호 요소 선택자
+    clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
+  },
+  navigation: { // 슬라이드 이전/다음 버튼 사용 여부
+    prevEl: '.project2-carousel .swiper-prev', // 이전 버튼 선택자
+    nextEl: '.project2-carousel .swiper-next' // 다음 버튼 선택자
+  }
+})
+/* End Project 2 carousel*/
 
 /* Project 3 carousel*/
 new Swiper('.project3-carousel .swiper-container',{
@@ -166,9 +209,9 @@ new Swiper('.project3-carousel .swiper-container',{
     nextEl: '.project3-carousel .swiper-next' // 다음 버튼 선택자
   }
 })
+/* End Project 3 carousel*/
 
-
-
+/* Personal carousel*/
 new Swiper('.personal-carousel .swiper-container', {
   // direction: 'horizontal', // 수평 슬라이드
   autoplay: { // 자동 재생 여부
@@ -187,71 +230,59 @@ new Swiper('.personal-carousel .swiper-container', {
     nextEl: '.personal-carousel .swiper-next' // 다음 버튼 선택자
   }
 })
+/* End Personal  carousel*/
+// 캐러셀 끝
+
 
 
 
 
 /**
- * portfolio-carousel-icon 슬라이드 토글 기능
+ * Project 2 슬라이드 토글
  */
 // 슬라이드 영역 요소 검색!
-const portfolioCarouselEl = document.querySelector('.portfolio-carousel')
-// 슬라이드 영역를 토글하는 버튼 검색!
-const portfolioCarouselToggleBtn = document.querySelector('.toggle-carousel')
-// 슬라이드 영역 숨김 여부 기본값!
-let isHidePortfolioCarousel = false
+const project2El = document.querySelector('.project2-carousel')
+// 슬라이드 영역를 토글하는 버튼을 클릭하면 위를 열거나 닫는다!
+const project2ToggleBtn = document.querySelector('.toggle-project_2')
+// 슬라이드 영역 숨김 여부 기본값! 숨김설정 True
+let project2HideCarousel = true;
 // 아이콘 요소 검색!
-const portfolioCarouselIcon = document.getElementById('portfolio-carousel-icon')
+const project2Icon = document.getElementById('project2-carousel-icon')
+// close 아이콘 
+const project2CloseIcon = document.getElementById('toggle-close_2')
 
-// 토글 버튼을 클릭하면,
-portfolioCarouselToggleBtn.addEventListener('click', function () {
+// 초기 설정: .project2-carousel을 숨김 상태로 설정
+project2El.classList.add('hide');
+
+// 토글 버튼을 클릭하면 함수 동작
+project2ToggleBtn.addEventListener('click', function () {
   // 슬라이드 영역 숨김 여부를 반댓값으로 할당!
-  isHidePortfolioCarousel = !isHidePortfolioCarousel
+  project2HideCarousel = !project2HideCarousel
   // 요소를 숨겨야 하면,
-  if (isHidePortfolioCarousel) {
-    portfolioCarouselEl.classList.add('hide')
-  // 요소가 보여야 하면,
+  if (project2HideCarousel) {
+    project2El.classList.add('hide') // 숨김
   } else {
-    portfolioCarouselEl.classList.remove('hide')
+    project2El.classList.remove('hide') // 요소가 보여야 하면,
   }
   // 아이콘을 토글!
-  if (portfolioCarouselIcon.innerText === 'download') {
-    portfolioCarouselIcon.innerText = 'upload'
+  if (project2Icon.innerText === 'upload') {
+    project2Icon.innerText = 'download'
   } else {
-    portfolioCarouselIcon.innerText = 'download'
+    project2Icon.innerText = 'upload'
   }
 })
-// End portfolio-carousel 슬라이드 요소 관리
 
-
-
-/**
- * carousel 슬라이드 요소 관리
- */
-new Swiper('.notice-line .swiper-container', {
-  direction: 'vertical', // 수직 슬라이드
-  autoplay: true, // 자동 재생 여부
-  loop: true // 반복 재생 여부
-})
-
-new Swiper('.personal-carousel .swiper-container', {
-  // direction: 'horizontal', // 수평 슬라이드
-  autoplay: { // 자동 재생 여부
-    delay: 5000 // 5초마다 슬라이드 바뀜
-  },
-  loop: true, // 반복 재생 여부
-  slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
-  spaceBetween: 10, // 슬라이드 사이 여백
-  centeredSlides: true, // 1번 슬라이드가 가운데 보이기
-  pagination: { // 페이지 번호 사용 여부
-    el: '.personal-carousel .swiper-pagination', // 페이지 번호 요소 선택자
-    clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
-  },
-  navigation: { // 슬라이드 이전/다음 버튼 사용 여부
-    prevEl: '.personal-carousel .swiper-prev', // 이전 버튼 선택자
-    nextEl: '.personal-carousel .swiper-next' // 다음 버튼 선택자
-  }
-})
+// close 아이콘을 클릭하면 함수 동작
+if (project2CloseIcon) {
+  project2CloseIcon.addEventListener('click', function () {
+    // 슬라이드 영역 숨김 여부를 true로 설정
+    project2HideCarousel = true;
+    project2El.classList.add('hide'); // 숨김
+    // 아이콘을 download로 설정
+    project2Icon.innerText = 'download';
+  });
+}
+// End Project 2 슬라이드 토글
 
 
 /**
@@ -266,7 +297,7 @@ let project3HideCarousel = true;
 // 아이콘 요소 검색!
 const project3Icon = document.getElementById('project3-carousel-icon')
 // close 아이콘 
-const project3CloseIcon = document.getElementById('project3-close-icon')
+const project3CloseIcon = document.getElementById('toggle-close_3')
 
 // 초기 설정: .project3-carousel을 숨김 상태로 설정
 project3El.classList.add('hide');
