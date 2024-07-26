@@ -173,7 +173,7 @@ new Swiper('.project1-carousel .swiper-container',{
 new Swiper('.project2-carousel .swiper-container',{
   // direction: 'horizontal', // 수평 슬라이드
   autoplay: { // 자동 재생 여부
-    delay: 5000 // 5초마다 슬라이드 바뀜
+    delay: 3000 // 5초마다 슬라이드 바뀜
   },
   loop: true, // 반복 재생 여부
   slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
@@ -194,7 +194,7 @@ new Swiper('.project2-carousel .swiper-container',{
 new Swiper('.project3-carousel .swiper-container',{
   // direction: 'horizontal', // 수평 슬라이드
   autoplay: { // 자동 재생 여부
-    delay: 5000 // 5초마다 슬라이드 바뀜
+    delay: 3000 // 5초마다 슬라이드 바뀜
   },
   loop: true, // 반복 재생 여부
   slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
@@ -245,14 +245,14 @@ const project2El = document.querySelector('.project2-carousel')
 // 슬라이드 영역를 토글하는 버튼을 클릭하면 위를 열거나 닫는다!
 const project2ToggleBtn = document.querySelector('.toggle-project_2')
 // 슬라이드 영역 숨김 여부 기본값! 숨김설정 True
-let project2HideCarousel = true;
+let project2HideCarousel = false;
 // 아이콘 요소 검색!
 const project2Icon = document.getElementById('project2-carousel-icon')
 // close 아이콘 
-const project2CloseIcon = document.getElementById('toggle-close_2')
+const project2CloseIcon = document.getElementById('toggle-close-icon-2')
 
 // 초기 설정: .project2-carousel을 숨김 상태로 설정
-project2El.classList.add('hide');
+// project2El.classList.add('hide');
 
 // 토글 버튼을 클릭하면 함수 동작
 project2ToggleBtn.addEventListener('click', function () {
@@ -292,15 +292,15 @@ if (project2CloseIcon) {
 const project3El = document.querySelector('.project3-carousel')
 // 슬라이드 영역를 토글하는 버튼을 클릭하면 위를 열거나 닫는다!
 const project3ToggleBtn = document.querySelector('.toggle-project_3')
-// 슬라이드 영역 숨김 여부 기본값! 숨김설정 True
-let project3HideCarousel = true;
+// 슬라이드 영역 숨김 여부 기본값! 숨김설정 true , 보이고 싶으면 FALSE
+let project3HideCarousel = false;
 // 아이콘 요소 검색!
 const project3Icon = document.getElementById('project3-carousel-icon')
 // close 아이콘 
-const project3CloseIcon = document.getElementById('toggle-close_3')
+const project3CloseIcon = document.getElementById('project3-close-icon-3')
 
 // 초기 설정: .project3-carousel을 숨김 상태로 설정
-project3El.classList.add('hide');
+// project3El.classList.add('hide');
 
 // 토글 버튼을 클릭하면 함수 동작
 project3ToggleBtn.addEventListener('click', function () {

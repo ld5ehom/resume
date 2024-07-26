@@ -346,7 +346,7 @@ section .about-self .left .social a{
   justify-content:center;
 }
 .project_2 .product{
-  width: 1000px;
+  width: 900px;
   margin-top: -40px;
   margin-left: -200px; /* 왼쪽으로 이동할 픽셀 수를 지정합니다 */
 }
@@ -401,7 +401,7 @@ section .about-self .left .social a{
 /*Project 2 - portfolio carousel */
 /*Project 2 아래 전체 박스 */
 .project_2 .project2-carousel{
-  height: 1300px;
+  height: 1200px;
   margin-top: 100px;
   margin-bottom: 20px;
   position: flex;
@@ -441,7 +441,7 @@ section .about-self .left .social a{
 .project_2 .project2-carousel .swiper-container{
     /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
     width: calc(1000px * 3 + 20px);
-    height: 800px; /*500*/
+    height: 650px; /*500*/
     top: 10px;
     text-align: center;
     position: relative;
@@ -451,12 +451,12 @@ section .about-self .left .social a{
 
 .project_2 .project2-carousel .swiper-slide img{ 
   width: 1000px;
-  height: 780px;
+  height: 600px;
 }
 
-.project_2 .project2-carousel .swiper-slide{ /*슬라이드 이미지 반투명하게 */
+.project_2 .project2-carousel .swiper-slide{ /* 캐러셀 양쪽 슬라이드 이미지 반투명하게 */
   position: relative;
-  opacity: .5;
+  opacity: .2;
   transition: opacity 1s;
 }
 .project_2 .project2-carousel .swiper-slide-active { /* 가운데 슬라이드 이미지 */
@@ -599,7 +599,7 @@ section .about-self .left .social a{
 /*Project 3 - carousel 3*/
 /*Project 3 아래 전체 박스 */
 .project_3 .project3-carousel{
-  height: 1300px;
+  height: 1200px;
   margin-top: 100px;
   margin-bottom: 20px;
   position: flex;
@@ -647,11 +647,11 @@ section .about-self .left .social a{
 }
 .project_3 .project3-carousel .swiper-slide img{ 
   width: 1000px;
-  height: 800px;
+  height: 700px;
 }
 .project_3 .project3-carousel .swiper-slide{ /*슬라이드 이미지 반투명하게 */
   position: relative;
-  opacity: .5;
+  opacity: .2;
   transition: opacity 1s;
 }
 .project_3 .project3-carousel .swiper-slide-active { /* 가운데 슬라이드 이미지 */
