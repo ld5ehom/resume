@@ -176,7 +176,7 @@ section .about-self .right h3 strong{
 section .about-self .right p{
   color: #fff;
   text-align :left;
-  font-size:1.2rem;
+  font-size:1.5rem;
   margin:1rem 0;
 }
 
@@ -193,7 +193,9 @@ section .about-self .right span {
   margin-top:1%;
 }
 
-
+section .about-self .right i{
+  font-size: 1.5rem;
+}
 section .about-self .right hr{
   margin-top: 0; /* 탑 마진 제거 */
   border-color:#FFD100;
@@ -401,6 +403,7 @@ section .about-self .left .social a{
 /*Project 2 - portfolio carousel */
 /*Project 2 아래 전체 박스 */
 .project_2 .project2-carousel{
+  color: black;
   height: 1200px;
   margin-top: 100px;
   margin-bottom: 20px;
@@ -425,10 +428,12 @@ section .about-self .left .social a{
 .project_2 .project2-carousel .project2-title p{
   margin-left: 70px;
   font-size: 25px;
-  color: #003B5C;
+  color: black;
   font-weight: bold; /* Make h3 text bold */
 }
 .project_2 .project2-carousel .btn{
+  color: black;
+  border-color: black;
   width: 120px;
   margin-left: 150px;
   display: flex;
@@ -623,10 +628,12 @@ section .about-self .left .social a{
 .project_3 .project3-carousel .project3-title p{
   margin-left: 70px;
   font-size: 25px;
-  color: #003B5C;
+  color: black;
   font-weight: bold; /* Make h3 text bold */
 }
 .project_3 .project3-carousel .btn{
+  color: black;
+  border-color: black;
   width: 120px;
   margin-left: 150px;
   display: flex;
